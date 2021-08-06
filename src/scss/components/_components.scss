@@ -21,17 +21,22 @@ buttons
   padding: 2rem;
   display: inline-block;
   box-shadow: $mainShadow;
+  text-align: center;
 
   &--primary {
     background-color: color(darkCyan);
 
-    .btn__span {
+    .btn__text--primary {
       color: color(teal);
     }
   }
 
   &--secondary {
     background-color: color(darkPurple);
+
+    .btn__text--secondary {
+      color: color(purple);
+    }
   }
 }
 
@@ -44,6 +49,7 @@ indicator
 .indicator {
   @include flexCenter;
   border: 0.15rem solid color(lightGray);
+  background-color: color(white);
   padding: 3rem;
   border-radius: 50%;
   height: 5rem;
@@ -60,6 +66,10 @@ indicator
     position: absolute;
     bottom: 100%;
     z-index: 1;
+  }
+
+  &--two {
+    transform: translateY(-30px);
   }
 
   &__text {

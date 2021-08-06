@@ -101,3 +101,37 @@ gallery
     box-shadow: $mainShadow;
   }
 }
+
+/* 
+========== 
+footer
+========== 
+*/
+
+.footer {
+  background: linear-gradient(
+      hsla(192, 37%, 48%, 0.8),
+      hsla(192, 37%, 48%, 0.9)
+    ),
+    url("../images/desktop/image-footer.jpg") center center/cover no-repeat;
+
+  &__content {
+    @include sectionSpacingMd;
+    @include maxWidthLg;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    color: color(white);
+  }
+
+  &__title {
+    @include headingStyles;
+    font-size: 4rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: 1.8rem;
+  }
+}
