@@ -22,9 +22,15 @@ buttons
   display: inline-block;
   box-shadow: $mainShadow;
   text-align: center;
+  transition: $mainTransition;
 
   &--primary {
     background-color: color(darkCyan);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(color(darkCyan), 10%);
+    }
 
     .btn__text--primary {
       color: color(teal);
@@ -33,6 +39,11 @@ buttons
 
   &--secondary {
     background-color: color(darkPurple);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(color(darkPurple), 5%);
+    }
 
     .btn__text--secondary {
       color: color(purple);

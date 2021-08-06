@@ -65,15 +65,22 @@ buttons
   display: inline-block;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .btn--primary {
   background-color: #4d96a8;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #6cacbc;
 }
 .btn--primary .btn__text--primary {
   color: #90e4f9;
 }
 .btn--secondary {
   background-color: #845eb0;
+}
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #916fb8;
 }
 .btn--secondary .btn__text--secondary {
   color: #d9b8ff;
