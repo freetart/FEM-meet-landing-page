@@ -1,6 +1,7 @@
 @use "../abstracts/abstracts" as *;
 
 .footer {
+  overflow-x: hidden;
   background: linear-gradient(
       hsla(192, 37%, 48%, 0.8),
       hsla(192, 37%, 48%, 0.9)

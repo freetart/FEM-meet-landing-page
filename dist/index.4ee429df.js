@@ -390,6 +390,10 @@ _aosDefault.default.init({
     duration: 1000,
     once: true
 });
+const preloaderEl = document.querySelector(".preloader");
+window.addEventListener("load", function() {
+    preloaderEl.classList.add("hide-preloader");
+});
 
 },{"aos":"7rvwx","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"7rvwx":[function(require,module,exports) {
 (function(e, t) {

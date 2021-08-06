@@ -2,6 +2,7 @@
 
 .features {
   @include sectionSpacingMd;
+  overflow-x: hidden;
 
   @include responsive(md) {
     @include sectionSpacingSm;
