@@ -1,2 +1,29 @@
 // imports
 @use "../abstracts/abstracts" as *;
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.btn {
+  @include headingStyles;
+  font-size: 1.6rem;
+  color: color(white);
+  border-radius: 5rem;
+  padding: 2rem;
+  display: inline-block;
+
+  &--primary {
+    background-color: color(darkCyan);
+
+    .btn__span {
+      color: color(teal);
+    }
+  }
+
+  &--secondary {
+    background-color: color(darkPurple);
+  }
+}
