@@ -1,0 +1,45 @@
+@use "../abstracts/abstracts" as *;
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.btn {
+  @include headingStyles;
+  font-size: 1.6rem;
+  color: color(white);
+  border-radius: $mainRadius;
+  padding: 2rem;
+  display: inline-block;
+  box-shadow: $mainShadow;
+  text-align: center;
+  transition: $mainTransition;
+
+  &--primary {
+    background-color: color(darkCyan);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(color(darkCyan), 10%);
+    }
+
+    .btn__text--primary {
+      color: color(teal);
+    }
+  }
+
+  &--secondary {
+    background-color: color(darkPurple);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(color(darkPurple), 5%);
+    }
+
+    .btn__text--secondary {
+      color: color(purple);
+    }
+  }
+}

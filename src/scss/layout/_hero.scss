@@ -1,0 +1,38 @@
+@use "../abstracts/abstracts" as *;
+
+.hero {
+  @include flexCenter;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  &__logo {
+    @include sectionSpacingSm;
+    width: 20rem;
+  }
+
+  &__content {
+    @include sectionSpacingMd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    @include headingStyles;
+    font-size: 6.4rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: 1.8rem;
+    color: color(gray);
+  }
+}

@@ -1,0 +1,34 @@
+@use "../abstracts/abstracts" as *;
+
+.indicator {
+  @include flexCenter;
+  border: 0.15rem solid color(lightGray);
+  background-color: color(white);
+  padding: 3rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  margin: 5rem auto;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: "";
+    background-color: color(lightGray);
+    height: 10rem;
+    width: 0.15rem;
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+  }
+
+  &--two {
+    transform: translateY(-30px);
+  }
+
+  &__text {
+    @include headingStyles;
+    color: color(gray);
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../abstracts/abstracts" as *;
+
+.features {
+  @include sectionSpacingMd;
+
+  &__content {
+    @include maxWidthLg;
+  }
+
+  &__info {
+    @include flexCenter;
+    @include sectionSpacingMd;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  &__sub-title {
+    @include headingStyles;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: color(darkCyan);
+  }
+
+  &__title {
+    @include headingStyles;
+    font-size: 4rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: 1.8rem;
+    color: color(gray);
+    width: 75%;
+    margin: 0 auto;
+  }
+}
