@@ -252,4 +252,38 @@ footer
   line-height: 1.6;
   font-size: 1.8rem;
 }
+/* 
+========== 
+tag
+========== 
+*/
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: #28283e;
+}
+.tag__heading {
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #fafafa;
+}
+.tag__link {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  color: #90e4f9;
+  outline: 0;
+}
+.tag__link:hover, .tag__link:focus {
+  text-decoration: underline;
+}
+.tag__logo {
+  width: 5rem;
+}
 /*# sourceMappingURL=index.11581f68.css.map */

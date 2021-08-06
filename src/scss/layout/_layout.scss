@@ -135,3 +135,38 @@ footer
     font-size: 1.8rem;
   }
 }
+
+/* 
+========== 
+tag
+========== 
+*/
+
+.tag {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: color(black);
+
+  &__heading {
+    @include textStyles;
+    font-size: size(xxs);
+    color: color(white);
+  }
+
+  &__link {
+    @include headingStyles;
+    color: color(teal);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__logo {
+    width: 5rem;
+  }
+}
