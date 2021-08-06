@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <!-- favicon -->
     <link rel="icon" href="./images/favicon/koala.ico" />
+    <!-- main scss -->
     <link rel="stylesheet" href="./scss/main.scss" />
     <title>Frontend Mentor | Meet Landing Page</title>
   </head>
@@ -17,14 +21,17 @@
           class="hero__people hero__people--left"
           src="./images/desktop/image-hero-left.png"
           alt="portraits of people"
+          data-aos="fade-right"
         />
         <div class="hero__info">
-          <h1 class="hero__title">Group Chat For Everyone</h1>
-          <p class="hero__desc">
+          <h1 class="hero__title" data-aos="fade-up">
+            Group Chat For Everyone
+          </h1>
+          <p class="hero__desc" data-aos="fade-up" data-aos-delay="100">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
-          <div class="btns">
+          <div class="btns" data-aos="fade-up" data-aos-delay="200">
             <a class="btn btn--primary" href="#!">
               Download
               <span class="btn__text btn__text--primary">v1.3</span>
@@ -36,6 +43,7 @@
           class="hero__people hero__people--right"
           src="./images/desktop/image-hero-right.png"
           alt="portraits of people"
+          data-aos="fade-left"
         />
       </div>
     </header>
@@ -52,24 +60,31 @@
               class="gallery__img"
               src="./images/desktop/image-woman-in-videocall.jpg"
               alt="woman in video call"
+              data-aos="fade-up"
             />
             <img
               class="gallery__img"
               src="./images/desktop/image-women-videochatting.jpg"
               alt="women videochatting"
+              data-aos="fade-up"
+              data-aos-delay="100"
             />
             <img
               class="gallery__img"
               src="./images/desktop/image-men-in-meeting.jpg"
               alt="men in meeting"
+              data-aos="fade-up"
+              data-aos-delay="200"
             />
             <img
               class="gallery__img"
               src="./images/desktop/image-man-texting.jpg"
               alt="man texting"
+              data-aos="fade-up"
+              data-aos-delay="300"
             />
           </div>
-          <div class="features__info">
+          <div class="features__info" data-aos="fade-in" data-aos-delay="200">
             <h3 class="features__sub-title">Built for Modern Use</h3>
             <h2 class="features__title">Smarter meetings, all in one place</h2>
             <p class="features__desc">
@@ -87,7 +102,7 @@
       <div class="indicator indicator--two">
         <span class="indicator__text">02</span>
       </div>
-      <div class="footer__content">
+      <div class="footer__content" data-aos="zoom-out">
         <h2 class="footer__title">Experience more together</h2>
         <p class="footer__desc">
           Stay connected with reliable HD meetings and unlimited one-on-one and
@@ -122,6 +137,10 @@
       </h3>
       <img src="./images/logo/habibdevgif.gif" alt="logo" class="tag__logo" />
     </article>
+
+    <!-- aos -->
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <!-- main js -->
     <script src="./js/main.js"></script>
   </body>
 </html>

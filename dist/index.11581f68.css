@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -133,6 +134,7 @@ hero
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .hero__logo {
   padding: 5rem 2rem;

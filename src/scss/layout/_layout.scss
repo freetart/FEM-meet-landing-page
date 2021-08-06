@@ -10,6 +10,7 @@ hero
 .hero {
   @include flexCenter;
   flex-direction: column;
+  overflow-x: hidden;
 
   &__logo {
     @include sectionSpacingSm;
