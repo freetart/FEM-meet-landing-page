@@ -3,8 +3,13 @@
 .features {
   @include sectionSpacingMd;
 
+  @include responsive(md) {
+    @include sectionSpacingSm;
+  }
+
   &__content {
     @include maxWidthLg;
+    overflow-x: hidden;
   }
 
   &__info {
@@ -13,6 +18,10 @@
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+
+    @include responsive(md) {
+      @include sectionSpacingSm;
+    }
   }
 
   &__sub-title {
@@ -33,5 +42,9 @@
     color: color(gray);
     width: 75%;
     margin: 0 auto;
+
+    @include responsive(md) {
+      width: 100%;
+    }
   }
 }

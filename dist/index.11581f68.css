@@ -50,6 +50,11 @@ input {
   justify-content: center;
   gap: 3rem;
 }
+@media (max-width: 450px) {
+  .btns {
+    flex-direction: column;
+  }
+}
 .btn {
   font-weight: 900;
   letter-spacing: 0.1rem;
@@ -119,7 +124,6 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow-x: hidden;
 }
 .hero__logo {
   padding: 5rem 2rem;
@@ -129,14 +133,48 @@ input {
   padding: 10rem 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 5rem;
   align-items: center;
   text-align: center;
+  overflow-x: hidden;
+}
+@media (max-width: 1080px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 1080px) {
+  .hero .hero__people {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .hero .hero__people--left {
+    order: -1;
+  }
+  .hero .hero__people--right {
+    order: 2;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero__people {
+    width: 75%;
+  }
+}
+@media (max-width: 450px) {
+  .hero .hero__people {
+    width: 100%;
+  }
 }
 .hero__info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (max-width: 1080px) {
+  .hero__info {
+    order: 1;
+  }
 }
 .hero__title {
   font-weight: 900;
@@ -154,9 +192,15 @@ input {
 .features {
   padding: 10rem 2rem;
 }
+@media (max-width: 768px) {
+  .features {
+    padding: 5rem 2rem;
+  }
+}
 .features__content {
   max-width: 1400px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .features__info {
   display: flex;
@@ -166,6 +210,11 @@ input {
   flex-direction: column;
   text-align: center;
   gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .features__info {
+    padding: 5rem 2rem;
+  }
 }
 .features__sub-title {
   font-weight: 900;
@@ -190,10 +239,21 @@ input {
   width: 75%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .features__desc {
+    width: 100%;
+  }
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .gallery__img {
   border-radius: 2rem;
@@ -211,6 +271,12 @@ input {
   align-items: center;
   gap: 5rem;
   color: #fafafa;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
 }
 .footer__title {
   font-weight: 900;

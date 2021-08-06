@@ -15,6 +15,11 @@
     align-items: center;
     gap: 5rem;
     color: color(white);
+    overflow-x: hidden;
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__title {

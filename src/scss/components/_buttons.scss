@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   gap: 3rem;
+
+  @include responsive(sm) {
+    flex-direction: column;
+  }
 }
 
 .btn {
