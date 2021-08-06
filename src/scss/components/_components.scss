@@ -1,6 +1,12 @@
 // imports
 @use "../abstracts/abstracts" as *;
 
+/* 
+========== 
+buttons
+========== 
+*/
+
 .btns {
   display: flex;
   justify-content: center;
@@ -11,9 +17,10 @@
   @include headingStyles;
   font-size: 1.6rem;
   color: color(white);
-  border-radius: 5rem;
+  border-radius: $mainRadius;
   padding: 2rem;
   display: inline-block;
+  box-shadow: $mainShadow;
 
   &--primary {
     background-color: color(darkCyan);
@@ -25,5 +32,39 @@
 
   &--secondary {
     background-color: color(darkPurple);
+  }
+}
+
+/* 
+========== 
+indicator
+========== 
+*/
+
+.indicator {
+  @include flexCenter;
+  border: 0.15rem solid color(lightGray);
+  padding: 3rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  margin: 5rem auto;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: "";
+    background-color: color(lightGray);
+    height: 10rem;
+    width: 0.15rem;
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+  }
+
+  &__text {
+    @include headingStyles;
+    color: color(gray);
+    font-size: 1.6rem;
   }
 }

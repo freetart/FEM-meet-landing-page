@@ -1,17 +1,23 @@
 // imports
 @use "../abstracts/abstracts" as *;
 
+/* 
+========== 
+hero
+========== 
+*/
+
 .hero {
   @include flexCenter;
   flex-direction: column;
 
   &__logo {
-    @include sectionSpacing;
+    @include sectionSpacingSm;
     width: 20rem;
   }
 
   &__content {
-    @include sectionSpacing;
+    @include sectionSpacingMd;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -34,5 +40,64 @@
     @include textStyles;
     font-size: 1.8rem;
     color: color(gray);
+  }
+}
+
+/* 
+========== 
+features
+========== 
+*/
+
+.features {
+  @include sectionSpacingMd;
+
+  &__content {
+    @include maxWidthLg;
+  }
+
+  &__info {
+    @include flexCenter;
+    @include sectionSpacingMd;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  &__sub-title {
+    @include headingStyles;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: color(darkCyan);
+  }
+
+  &__title {
+    @include headingStyles;
+    font-size: 4rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: 1.8rem;
+    color: color(gray);
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* 
+========== 
+gallery
+========== 
+*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+
+  &__img {
+    border-radius: $secondaryRadius;
+    box-shadow: $mainShadow;
   }
 }
