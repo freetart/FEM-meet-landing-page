@@ -13,7 +13,7 @@ site: https://fem-meet-landing-page-challenge.netlify.app/
 - scss
 - javascript
 
-#### Dependencies
+#### Libraries
 - parcel
 - aos
 
